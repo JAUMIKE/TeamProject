@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/schedulePage.css">
+    <style>
+        .dataArea{
+            margin-top: 50px;
+            width: 755px;
+            
+            
+        }
+
+        .dataContent{
+            width: 100%;
+            height: 130px;
+            border: 1px solid #F24041;
+            padding: 0;
+            margin-bottom: 25px;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 640px 115px;
+        }
+        .rightArea{
+            padding: 0;
+        }
+        .dataContentLeft{
+            /* border-right: 1px solid  #F24041; */
+        }
+        .dataContentRight{
+            position: relative;
+            padding-right: 10px ;
+            padding-bottom: 10px;
+        }
+        .dataContentShow{
+            width: 590px;
+            height: 80px;
+            margin-left: 25px;
+            border: 1px solid  black;
+        }
+        .btnDel{
+            width: 30px;
+            height: 30px;
+            top: 0px;
+            color: #F24041;
+            display: flex;
+            justify-content: right;
+            align-items: flex-end;
+            float: right;
+        }
+        .btnDowuiki {
+            width: 90px;
+            height: 25px;
+            background-color: #F24041;
+            color:#f2f0eb;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            position:absolute;
+            bottom: 10px;
+            right: 10px;
+            
+        }
+        .delImg{
+            position: absolute;
+            right: 10px;
+            top:10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- navbar範圍 -->
+    <div class="row" style="height: 80px; background-color: blanchedalmond;"></div>
+    <!-- container -->
+    <div class="container main">
+        <!-- 左邊功能選單 -->
+        <div class="row" >
+            <div class="col-3 leftBar">
+                <div class="">
+                    <div class="picArea mry-25 mx-auto">
+                        <img src="../images/rabbit_240x200.jpeg" alt="">
+                    </div>
+                    <div class="mry-25 d-flex justify-content-center"><button class="btn btnPic">上傳頭貼</button></div>
+                </div>
+                <hr class="hrTagLeft" >
+                <div class="">
+                    <a href="" class="funcList mry-25 mx-auto text-center badge" >會員資料</a>
+                    <a href="" class="funcList mry-25 mx-auto text-center badge" style="background-color: #f29551;">景點收藏</a>
+                    <a href="" class="funcList mry-25 mx-auto text-center badge">我的文章</a>
+                    <a href="" class="funcList mry-25 mx-auto text-center badge">我的訂單</a>
+                </div>
+                <hr />
+                <div class=""></div>
+            </div>
+            <!-- 資料內容 -->
+            <div class="col-9 rightArea">
+               <div class="mrx-50 dataArea">
+                    <div class="dataContent badge ">
+                        <div class="dataContentLeft">
+                            <div class="dataContentShow mry-25">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="dataContentRight">
+                            <div><img class="delImg" src="../images/delete-r.svg" alt=""></div>
+                            <!-- <button class="btn btnDel">&times;</button> -->
+                            <button class="btn btnDowuiki">查看收藏</button>
+                        </div>
+                    </div>
+                    <div class="dataContent badge">
+                        <div class="dataContentLeft">
+                            <div class="dataContentShow mry-25"></div>
+                        </div>
+                        <div class="dataContentRight">
+                            <div><img class="delImg" src="../images/delete-r.svg" alt=""></div>
+                            <button class="btn btnDowuiki">查看收藏</button>
+                        </div>
+                    </div>
+                    <div class="dataContent badge">
+                        <div class="dataContentLeft">
+                            <div class="dataContentShow mry-25"></div>
+                        </div>
+                        <div class="dataContentRight">
+                            <div><img class="delImg" src="../images/delete-r.svg" alt=""></div>
+                            <button class="btn btnDowuiki">查看收藏</button>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 200px; background-color: blanchedalmond; border:1px solid black"></div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

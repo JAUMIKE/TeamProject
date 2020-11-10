@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "jf open 粉圓 1.1";
+    src: url('../css/jf-openhuninn-1.1.ttf');
+}
+
+body {
+    font-family: "jf open 粉圓 1.1";
+}
+
+/* 整體內容區 */
+.main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #F24041;
+    height: 823px;
+
+}
+
+/* 基本資料標題 */
+.dataBasic {
+    font-size: 50px;
+    color: #F24041;
+}
+
+.mry-25 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.mry-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mrx-25 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.mrx-50 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* 右側基本資料hr tag */
+.hrTagRight {
+    height: 3px;
+    background-color: #F24041;
+    margin-top: 0px;
+}
+
+/* 右側帳號資訊區域外層div*/
+
+/* 左側資訊欄外層div */
+.leftBar {
+    height: 823px;
+    background-color: #F24041;
+}
+
+/* 左側功能清單 */
+.funcList {
+    width: 190px;
+    height: 33px;
+    display: block;
+    background-color: #f2f0eb;
+    /* border-radius: 10px; */
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* 左側hr標籤 */
+.hrTagLeft {
+    width: 235px;
+    height: 2px;
+    background-color: #f2f0eb;
+    margin-top: 0px;
+}
+
+
+/* 按紐設定 */
+
+/* 圖片區域大小 */
+.picArea {
+    width: 165px;
+    height: 165px;
+    /* border-radius: 100%; */
+
+}
+
+/* 大頭貼 */
+img {
+    width: 165px;
+    height: 165px;
+    border: 2px solid #f2f0eb;
+    border-radius: 100%;
+}
+
+/* 上傳大頭貼按鈕 */
+.btnPic {
+    width: 90px;
+    height: 25px;
+    font-size: 15px;
+    background-color: #f2f0eb;
+    color: #F24041;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
