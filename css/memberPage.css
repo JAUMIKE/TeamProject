@@ -1,90 +1,187 @@
 @font-face {
-    font-family: "jf open 粉圓 1.1";
+    font-family: "Huninn";
     src: url('../css/jf-openhuninn-1.1.ttf');
 }
-body{
-    font-family: "jf open 粉圓 1.1";
+
+body {
+    font-family: "Huninn";
 }
+
 /* 整體內容區 */
-.main{
+.main {
     margin-top: 50px;
     margin-bottom: 50px;
-    border:1px solid #F24041;
+    border: 2px solid #F24041;
+    background-color: #f2f0eb;
+}
 
-}
-/* 基本資料標題 */
-.dataBasic{
-    font-size: 50px;
-    color:#F24041;
-}
-.mry-25{
+
+
+.mry-25 {
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.mry-50{
+
+.mry-50 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.mrx-25{
+
+.mrx-25 {
     margin-left: 25px;
     margin-right: 25px;
 }
-.mrx-50{
+
+.mrx-50 {
     margin-left: 50px;
     margin-right: 50px;
 }
+/* 修改左右padding */
+.px-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* 左側資訊欄外層div */
+.leftBar {
+    background-color: #F24041;
+}
+
+    /* 按紐設定 */
+    .btnDowuiki {
+        width: 90px;
+        height: 25px;
+        background-color: #F24041;
+        color: #f2f0eb;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        /* margin-top: 10px; */
+    }
+    /* 大頭貼圖片區域 */
+    .picArea {
+        width: 165px;
+        height: 165px;
+        /* border-radius: 100%; */
+
+    }
+    /* 上傳按鈕 */
+    .btnPic {
+        width: 90px;
+        height: 25px;
+        font-size: 15px;
+        background-color: #f2f0eb;
+        color: #F24041;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* 大頭貼 */
+    .memberImg {
+        width: 165px;
+        height: 165px;
+        border: 2px solid #f2f0eb;
+        border-radius: 100%;
+    }
+
+
+
+/* 基本資料標題 */
+.dataBasic {
+    font-size: 50px;
+    color: #F24041;
+
+}
+/* 幫左右、上方增加邊框 */
+.rowBorder {
+    border-top: 2px solid #F24041;
+    border-left: 2px solid #F24041;
+    border-right: 2px solid #F24041;
+}
+
+/* 第一列設定margin-top */
+.firstRow {
+    margin-top: 50px;
+}
+
+/* 資料前三列高度與margin */
+.firstRow,
+.secondRow,
+.thirdRow {
+    height: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* 資料第四列設定高度、邊框、margin */
+.forthRow {
+    height: 320px;
+    border-bottom: 2px solid #F24041;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* 資料第一欄-資料標題 */
+.firstCol {
+    border-right: 2px solid #F24041;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+/* 資料第二欄-資料內容 */
+.secCol {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 30px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 資料第三欄-修改按鈕 */
+.thirdCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+    padding-left: 0;
+}
+
+/* 自介標題區塊 */
+.selfIntro {
+    border-right: 2px solid #F24041;
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+/* 自介文字方塊 */
+.selfArea {
+    width: 100%;
+    margin-top: 25px; 
+    margin-bottom: 5px;
+    padding: 25px;
+    resize : none;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
 /* 右側基本資料hr tag */
-.hrTagRight{
+.hrTagRight {
     height: 3px;
     background-color: #F24041;
     margin-top: 0px;
 }
-
-/* 右側帳號資訊區域外層div*/
-
-/* 左側資訊欄外層div */
-.leftBar{
-    background-color: #F24041;
-}
-
-/* 右側資料區 外層 */
-.dataArea{
-    width: 730px;
-    height: 620px;
-    border: 2px solid  #F24041;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 160px 567px;
-}
-/* 資料title */
-.dataTitle{
-    width: 160px;
-    border-right: 1px solid #F24041;
-    
-}
-/* 資料內容外層div */
-.dataContent{
-    width: 568px;
-}
-/* 資料內容前三列title區 */
-.userName ,.userPassword,.nickName{
-    height: 100px;
-    border-bottom: 1px solid  #F24041;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-            
-}
-/*  資料內容前三列content區 */
-.userNameContent,.userPwdContent,.nickNameContent{
-    height: 100px;
-    border-bottom: 1px solid  #F24041;
-    font-size: 30px;
-
-    padding-left: 25px;
-    padding-right: 25px;
-
-    
-}
-

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,138 +8,157 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/memberPage.css">
     <style>
-
-
-        /* 自介區域div */
-        .selfIntro{
-            height: 318px;
-            font-size: 30px;
-            padding-top:25px;
-            display: flex;
-            justify-content: center;
-        }
-        /* 自介文字方塊 */
-        .textArea{
-            width: 520px;
-            height: 220px;
-            padding: 25px;
-            
-        }
-        /* 按紐設定 */
-        .btnDowuiki{
-            width: 90px;
-            height: 25px;
-            background-color:  #F24041;
-            color: #f2f0eb;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            float: right;
-            /* margin-top: 10px; */
-        }
-        .picArea{
-            width: 165px;
-            height: 165px;
-            /* border-radius: 100%; */
-            
-        }
-        .btnPic{
-            width: 90px;
-            height: 25px;
-            font-size: 15px;
-            background-color: #f2f0eb;
-            color: #F24041;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        img{
-            width: 165px;
-            height: 165px;
-            border: 2px solid #f2f0eb;
-            border-radius: 100%;
-        }
-
-        .funcList{
-            width: 190px;
-            height: 33px;
-            display: block;
-            background-color: #f2f0eb;
-            /* border-radius: 10px; */
-            font-size: 20px;
-            text-decoration: none;
-            color: black;
-        }
-        .hrTagLeft{
+        .hrTagLeft {
             width: 235px;
             height: 2px;
             background-color: #f2f0eb;
             margin-top: 0px;
+            margin-bottom: 0px;
         }
-     
+
+        .leftBarIcon{
+            width: 20px;
+            height: 20px;
+            margin-left: 10px; 
+            margin-right: 10px; 
+        }
+
+        .mainPage{
+            /* display: inline-block; */
+            display: block;
+            text-align: center;
+            background-color: #f2955e;
+            height: 33px;
+        }
+        .mainPage>div{
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            color: #f2f0eb;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 100%;
+            
+           
+        }
+        .hyperPage{
+            display: block;
+            text-align: center;
+            background-color: #f2f0eb;
+            height: 33px;
+        }
+        .hyperPage>div{
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            color: #151515;
+            padding-top: 0;
+            padding-bottom: 0;
+            line-height: 100%;
+            height: 100%;
+           
+        }
     </style>
 </head>
+
 <body>
     <!-- navbar範圍 -->
     <div class="row" style="height: 80px; background-color: blanchedalmond;"></div>
     <!-- container -->
     <div class="container main">
         <!-- 左邊功能選單 -->
-        <div class="row" >
-            <div class="col-3 leftBar">
+        <div class="row">
+            <div class="col-3 leftBar p-0">
                 <div class="">
                     <div class="picArea mry-25 mx-auto">
-                        <img src="../images/rabbit_240x200.jpeg" alt="">
+                        <img class="memberImg" src="../images/rabbit_240x200.jpeg" alt="">
                     </div>
                     <div class="mry-25 d-flex justify-content-center"><button class="btn btnPic">上傳頭貼</button></div>
                 </div>
-                <hr class="hrTagLeft" >
-                <div class="">
-                    <a href="" class="funcList mry-25 mx-auto text-center badge" style="background-color: #f29551;">會員資料</a>
-                    <a href="" class="funcList mry-25 mx-auto text-center badge">景點收藏</a>
-                    <a href="" class="funcList mry-25 mx-auto text-center badge">我的文章</a>
-                    <a href="" class="funcList mry-25 mx-auto text-center badge">我的訂單</a>
+                <hr class="hrTagLeft">
+                <div class="row mry-25">
+                    <div class="col-2"></div>
+                    <div class="col-8 p-0">
+                        <a href="" class="mainPage badge">
+                            <div><img class="leftBarIcon" src="../images/U-info-w.svg" alt=""></div>
+                            <div>會員資料</div>
+                        </a>
+                    </div>
+                    <div class="col-2"></div> 
                 </div>
-                <hr />
+                <div class="row mry-25">
+                    <div class="col-2"></div>
+                    <div class="col-8 p-0">
+                        <a href="" class="hyperPage badge">
+                            <div><img class="leftBarIcon" src="../images/keep-b.svg" alt=""></div>
+                            <div>景點收藏</div>
+                        </a>
+                    </div>
+                    <div class="col-2"></div> 
+                </div>
+                <div class="row mry-25">
+                    <div class="col-2"></div>
+                    <div class="col-8 p-0">
+                        <a href="" class="hyperPage badge">
+                            <div><img class="leftBarIcon" src="../images/U-article-b.svg" alt=""></div>
+                            <div>我的文章</div>
+                        </a>
+                    </div>
+                    <div class="col-2"></div> 
+                </div>
+                <div class="row mry-25">
+                    <div class="col-2"></div>
+                    <div class="col-8 p-0">
+                        <a href="" class="hyperPage badge">
+                            <div><img class="leftBarIcon" src="../images/U-receipt-b.svg" alt=""></div>
+                            <div>我的訂單</div>
+                        </a>
+                    </div>
+                    <div class="col-2"></div> 
+                </div>
                 <div class=""></div>
             </div>
             <!-- 資料內容 -->
-            <div class="col-9">
-                <div class="row dataBasic">
-                    <div class="mry-25 mx-auto">基本資料</div>
-                </div>
-                <div class="mrx-50"><hr class="hrTagRight" /></div>
-                <div class="row">
-                    <div class="dataArea mx-auto mry-50">
-                        <div class="dataTitle">
-                           <div class="userName">帳號 : </div>
-                           <div class="userPassword">密碼 : </div>
-                           <div class="nickName">暱稱 : </div>
-                           <div class="selfIntro">自介 : </div>
-                        </div>
-                        <div class="dataContent">
-                            <div class="userNameContent">aabb@gmail.com</div>
-                            <div class="userPwdContent row">
-                                <div class="col-8">*******</div>
-                                <div class="col-4"><button class="btn btnDowuiki">更改密碼</button></div>
-                            </div>
-                            <div class="nickNameContent row">
-                                <div class="col-8">喜羊羊</div>
-                                <div class="col-4"><button class="btn btnDowuiki">更改暱稱</button></div>
-                            </div>
-                            <!-- 自我介紹表單 -->
-                            <div class="selfIntroContent">
-                                <div class="mrx-25 mry-25">
-                                    <form action="">
-                                        <textarea class="textArea" placeholder="留下個性簽名吧~" name="" id=""></textarea>
-                                        <button class="btn btnDowuiki" type="submit" >送出</button>
-                                    </form>
-                                </div>
-                            </div>
+            <div class="col-9 p-0">
+                <div class="dataBasic text-center">基本資料</div>
+                <div><hr class="hrTagRight mrx-50" /></div>
+                <div class="mrx-25">
+                    <div class="row rowBorder firstRow">
+                        <div class="col-2 firstCol">帳號</div>
+                        <!-- 資料置換處 -->
+                        <div class="col-8 secCol">aabb123@gmail.com</div>
+                        <div class="col-2"></div>
+                    </div>
+                  
+                    <div class="row rowBorder secondRow">
+                        <div class="col-2 firstCol">密碼</div>
+                        <!-- 資料置換處 -->
+                        <div class="col-8 secCol">********</div>
+                        <div class="col-2 thirdCol">
+                            <button class="btn btnDowuiki">更改密碼</button>
                         </div>
                     </div>
+                    <div class="row rowBorder thirdRow">
+                        <div class="col-2 firstCol">暱稱</div>
+                        <!-- 資料置換處 -->
+                        <div class="col-8 secCol">喜羊羊</div>
+                        <div class="col-2 thirdCol">
+                            <button class="btn btnDowuiki">更改暱稱</button>
+                        </div>
+                    </div>
+                    <div class="row rowBorder forthRow">
+                        <div class="col-2 selfIntro">自介</div>
+                        <div class="col-10 px-25">
+                            <!-- 資料置換處 -->
+                            <form class="" action="">
+                                <div><textarea class="selfArea" name="" id="" cols="50" rows="8" placeholder="留下個性簽名吧~"></textarea></div>
+                                <div><button class="btn btnDowuiki">送出</button></div>
+                            </form>
+                        </div>
+                      
+                    </div>
                 </div>
+               
             </div>
         </div>
     </div>
@@ -147,4 +167,5 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </body>
+
 </html>

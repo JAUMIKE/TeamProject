@@ -1,25 +1,28 @@
 @font-face {
-    font-family: "jf open 粉圓 1.1";
+    font-family: "Huninn";
     src: url('../css/jf-openhuninn-1.1.ttf');
 }
 
 body {
-    font-family: "jf open 粉圓 1.1";
+    font-family: "Huninn";
 }
 
 /* 整體內容區 */
 .main {
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 1px solid #F24041;
-    height: 823px;
+    border: 2px solid #F24041;
+    background-color: #f2f0eb;
 
 }
 
-/* 基本資料標題 */
-.dataBasic {
-    font-size: 50px;
-    color: #F24041;
+.mry-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mrx-10{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .mry-25 {
@@ -42,14 +45,6 @@ body {
     margin-right: 50px;
 }
 
-/* 右側基本資料hr tag */
-.hrTagRight {
-    height: 3px;
-    background-color: #F24041;
-    margin-top: 0px;
-}
-
-/* 右側帳號資訊區域外層div*/
 
 /* 左側資訊欄外層div */
 .leftBar {
@@ -57,17 +52,7 @@ body {
     background-color: #F24041;
 }
 
-/* 左側功能清單 */
-.funcList {
-    width: 190px;
-    height: 33px;
-    display: block;
-    background-color: #f2f0eb;
-    /* border-radius: 10px; */
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-}
+
 
 /* 左側hr標籤 */
 .hrTagLeft {
@@ -89,7 +74,7 @@ body {
 }
 
 /* 大頭貼 */
-img {
+.memberImg {
     width: 165px;
     height: 165px;
     border: 2px solid #f2f0eb;
@@ -106,4 +91,38 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+   /* 資料內容區 */
+   .dataContent{
+    width: 100%;
+    height: 100%;
+    border :2px solid  #F24041;
+    margin-bottom: 25px;
+    position: relative;
+}
+/* 行程資料的icon */
+.rightIcon{
+    width: 20px;
+    height: 20px;
+}
+/* 資料內容字體大小文字溢出處理 */
+.scheTitle{
+    font-size: 20px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+/* 查看收藏按鈕位置 */
+.btnPosition{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+/* 文字溢出處裡 */
+.textOver{
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
