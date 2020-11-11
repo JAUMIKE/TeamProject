@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/modalPage.css">
+    <style>
+        .hrTagLeft {
+            width: 235px;
+            height: 2px;
+            background-color: #f2f0eb;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .leftBarIcon {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .mainPage {
+            /* display: inline-block; */
+            display: block;
+            text-align: center;
+            background-color: #f2955e;
+            height: 33px;
+        }
+
+        .mainPage>div {
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            color: #f2f0eb;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 100%;
+
+
+        }
+
+        .hyperPage {
+            display: block;
+            text-align: center;
+            background-color: #f2f0eb;
+            height: 33px;
+        }
+
+        .hyperPage>div {
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            color: #151515;
+            padding-top: 0;
+            padding-bottom: 0;
+            line-height: 100%;
+            height: 100%;
+
+        }
+
+        #updatePwd {
+            width: 350px;
+            height: 245px;
+            border-radius: 5px;
+            box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.45);
+            position: relative;
+            background-color: #f2f0eb;
+
+        }
+
+        #modalHead {
+            border-radius: 5px 5px 0 0;
+            height: 30px;
+            background-color: #F24041;
+        }
+
+        .modal-header {
+            border-radius: 5px 5px 0 0;
+            height: 30px;
+            background-color: #F24041;
+        }
+
+        #modal-dialog {
+            /* width: 350px;
+            height: 205px; */
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.45);
+            position: relative;
+            background-color: #f2f0eb;
+        }
+
+        #oldPwdInput,
+        #newPwdInput,
+        #checkPwdInput {
+            margin-left: 10px;
+            width: 140px;
+            height: 20px;
+
+        }
+
+        .oldPwd {
+            height: 30px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .newPwd {
+            height: 30px;
+            margin: 20px 0px 20px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .checkPwd {
+            height: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .checkPwd>label,
+        .newPwd>label,
+        .oldPwd>label {
+            margin: 0;
+        }
+
+        .btnOk {
+            width: 56px;
+            height: 20px;
+            font-size: 12px;
+            background-color: #F24041;
+            color: #f2f0eb;
+            line-height: 10px;
+        }
+
+        .btnCancel {
+            width: 56px;
+            height: 20px;
+            font-size: 12px;
+            color: #f2f0eb;
+            background-color: #151515;
+            line-height: 10px;
+
+        }
+
+        #modalFooter {
+            text-align: center;
+        }
+
+        .cancelIcon {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+
+        }
+
+        #updateNickName {
+            width: 350px;
+            height: 205px;
+            border-radius: 5px;
+            box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.45);
+            position: relative;
+            background-color: #f2f0eb;
+
+        }
+        #deleLocation {
+            width: 350px;
+            height: 205px;
+            border-radius: 5px;
+            box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.45);
+            position: relative;
+            background-color: #f2f0eb;
+
+        }
+
+        .updateNickname {
+            margin: 25px 0px 25px 0px;
+        }
+
+        .updateNickname>p {
+            font-size: 24px;
+        }
+
+        .updateNickname>input {
+            width: 140px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar範圍 -->
+    <div class="row" style="height: 80px; background-color: blanchedalmond;"></div>
+    <!-- container -->
+    <div class="container main">
+        <!-- 左邊功能選單 -->
+        <div class="row">
+            <div class="col-3 leftBar p-0">
+                <div class="">
+                    <div class="picArea mry-25 mx-auto">
+                        <img class="memberImg" src="../images/rabbit_240x200.jpeg" alt="">
+                    </div>
+                    <div class="mry-25 d-flex justify-content-center"><button class="btn btnPic">上傳頭貼</button></div>
+                </div>
+                <hr class="hrTagLeft">
+                <div class="row mry-25">
+                    <div class="col-2"></div>
+                    <div class="col-8 p-0">
+                        <a href="" class="mainPage badge">
+                            <div><img class="leftBarIcon" src="../images/U-info-w.svg" alt=""></div>
+                            <div>會員資料</div>
+                        </a>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row mry-25">
+                    <div class="col-2"></div>
+                    <div class="col-8 p-0">
+                        <a href="" class="hyperPage badge">
+                            <div><img class="leftBarIcon" src="../images/keep-b.svg" alt=""></div>
+                            <div>景點收藏</div>
+                        </a>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row mry-25">
+                    <div class="col-2"></div>
+                    <div class="col-8 p-0">
+                        <a href="" class="hyperPage badge">
+                            <div><img class="leftBarIcon" src="../images/U-article-b.svg" alt=""></div>
+                            <div>我的文章</div>
+                        </a>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row mry-25">
+                    <div class="col-2"></div>
+                    <div class="col-8 p-0">
+                        <a href="" class="hyperPage badge">
+                            <div><img class="leftBarIcon" src="../images/U-receipt-b.svg" alt=""></div>
+                            <div>我的訂單</div>
+                        </a>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class=""></div>
+            </div>
+            <!-- 資料內容 -->
+            <div class="col-9 p-0">
+                <div class="dataBasic text-center">基本資料</div>
+                <div>
+                    <hr class="hrTagRight mrx-50" />
+                </div>
+                <div>
+                    <button class="btn btnDowuiki">更改密碼</button>
+                    <button id="btnUpdateNickName" class="btn btnDowuiki">更改暱稱</button>
+                </div>
+                <!-- 對話框製作 修改密碼 -->
+                <div class="mx-auto" id="updatePwd">
+                    <div id="modalHead">
+                        <img class="cancelIcon" src="../images/delete-w.svg" alt="">
+                    </div>
+                    <div id="modalBody ">
+                        <form class="" action="">
+                            <div class="oldPwd ">
+                                <label for="oldPwdInput ">舊密碼 : </label>
+                                <input type="text" class="" id="oldPwdInput">
+                            </div>
+                            <div class="newPwd">
+                                <label for="newPwdInput">新密碼 : </label>
+                                <input type="text" id="newPwdInput">
+                            </div>
+                            <div class="checkPwd">
+                                <label for="checkPwdInput">再確認 : </label>
+                                <input type="text" id="checkPwdInput">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="modalFooter">
+                        <button class="btn btnOk">確認</button>
+                        <button class="btn btnCancel">取消</button>
+                    </div>
+                </div>
+
+                <hr class="mry-10" />
+                <!-- 對話框製作 修改暱稱 -->
+                <!-- modal fade -->
+                <div class="mx-auto   p-0" id="updateNickName">
+                    <div id="modalHead" class="modal-header">
+                        <img class="cancelIcon" id="cancalNickName"  src="../images/delete-w.svg" alt="">
+                    </div>
+                    <div id="modalBody">
+                        <form class="" action="">
+                            <div class="updateNickname text-center">
+                                <p>修改暱稱</p>
+                                <input type="text">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="modalFooter">
+                        <button class="btn btnOk">確認</button>
+                        <button class="btn btnCancel">取消</button>
+                    </div>
+                </div>
+                <hr class="mry-10" />
+                <!-- 對話框製作 修改暱稱 -->
+                <!-- modal fade -->
+                <div class="mx-auto p-0 mr" id="deleLocation">
+                    <div id="modalHead" class="modal-header">
+                        <img class="cancelIcon" id="cancalNickName"  src="../images/delete-w.svg" alt="">
+                    </div>
+                    <div id="modalBody" class="mry-50">
+                        <form class="" action="">
+                            <div class="updateNickname text-center">
+                                <p>是否刪除景點收藏?</p>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="modalFooter">
+                        <button class="btn btnOk">確認</button>
+                        <button class="btn btnCancel">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 200px; background-color: blanchedalmond; border:1px solid black"></div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $("#btnUpdateNickName").on("click", function () {
+            $("#updateNickName").modal({ backdrop: "static" });
+            // { backdrop: "static" }
+        })
+    </script>
+</body>
+
+</html>
