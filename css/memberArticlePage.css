@@ -16,11 +16,12 @@ body {
 
 }
 
-.mry-10{
+.mry-10 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.mrx-10{
+
+.mrx-10 {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -45,11 +46,37 @@ body {
     margin-right: 50px;
 }
 
+   /* 按紐設定 */
+   .btnDowuiki {
+    width: 90px;
+    height: 25px;
+    background-color: #F24041;
+    color: #f2f0eb;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    /* margin-top: 10px; */
+}
+  /* 上傳大頭貼 */
+  .btnPic {
+    width: 90px;
+    height: 25px;
+    font-size: 15px;
+    background-color: #f2f0eb;
+    color: #F24041;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* 左側資訊欄外層div */
 .leftBar {
     height: 823px;
     background-color: #F24041;
+    border-right: 2px solid #F24041;
 }
 
 
@@ -93,30 +120,261 @@ body {
     justify-content: center;
 }
 
-   /* 資料內容區 */
-   .dataContent{
+.hrTagLeft {
+    width: 235px;
+    height: 2px;
+    background-color: #f2f0eb;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.leftBarIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* 左邊功能選單文字 */
+.fs-20 {
+    font-size: 25px;
+    color: #151515;
+    text-decoration: none;
+}
+
+/* 左邊功能當前選單圖、文字垂直置中 */
+.verticle_center {
+    line-height: 3px;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+/* 左邊功能當前選單樣式 */
+.btn-leftItem-main {
+    color: #fff;
+    background-color: #f2955e;
+    border-color: #f2955e;
+}
+
+/* 左邊功能當前選單文字 */
+.fs-20-main {
+    font-size: 25px;
+    color: #f2f0eb;
+    text-decoration: none;
+}
+
+/* 左邊功能選單樣式 */
+.btn-leftItem {
+    color: #fff;
+    background-color: #f2f0eb;
+    border-color: #f2f0eb;
+}
+
+/* 左邊功能選單hover效果 */
+.btn-leftItem:hover {
+    color: #fff;
+    background-color: #f2955e;
+    border-color: #f2955e;
+}
+
+/* 左邊功能選單點擊效果 */
+.btn-leftItem:focus,
+.btn-leftItem.focus {
+    color: #fff;
+    background-color: #f2955e;
+    border-color: #f2955e;
+    box-shadow: 0 0 0 0.2rem rgba(242, 64, 65, 0.5);
+}
+
+
+/* 資料內容區 */
+.dataContent {
     width: 100%;
     height: 100%;
-    border :2px solid  #F24041;
+    border: 2px solid #F24041;
     margin: 20px 100px 20px 20px;
     /* position: relative; */
 }
+
 /* 行程資料的icon */
-.rightIcon{
+.rightIcon {
     width: 20px;
     height: 20px;
 }
+
 /* 資料內容字體大小文字溢出處理 */
-.scheTitle{
+.scheTitle {
     font-size: 20px;
-    overflow:hidden;
+    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    
+
 }
+
 /* 查看收藏按鈕位置 */
-.btnPosition{
+.btnPosition {
     position: absolute;
     bottom: 15px;
     right: 20px;
+}
+
+/* dialog OK按鈕 */
+.btnOk {
+    width: 56px;
+    height: 20px;
+    font-size: 12px;
+    background-color: #F24041;
+    color: #f2f0eb;
+    line-height: 10px;
+}
+
+/* dialog 取消按鈕 */
+.btnCancel {
+    width: 56px;
+    height: 20px;
+    font-size: 12px;
+    color: #f2f0eb;
+    background-color: #151515;
+    line-height: 10px;
+
+}
+
+/* dialog header */
+#modalHead {
+    border-radius: 5px 5px 0 0;
+    height: 30px;
+    background-color: #F24041;
+}
+
+/* dialog 右上角x */
+.cancelIcon {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+
+}
+
+/* dialog body樣式 */
+#modal-dialog {
+    /* width: 350px;
+            height: 205px; */
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.45);
+    position: relative;
+    background-color: #f2f0eb;
+}
+
+/* dialog footer按鈕 */
+#modalFooter {
+    text-align: center;
+}
+
+/* dialog 主體樣式 */
+#deleArticle {
+    width: 350px;
+    height: 205px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.45);
+    position: relative;
+    background-color: #f2f0eb;
+
+}
+
+/* dialog 刪除提示訊息 */
+.deleteMsg {
+    margin: 25px 0px 25px 0px;
+}
+
+.deleteMsg>p {
+    font-size: 24px;
+}
+
+
+/* 我的文章、收藏文章按鈕樣式 */
+.btnArtColl {
+    width: 90px;
+    height: 25px;
+    color: #f2f0eb;
+    font-size: 15px;
+    line-height: 100%;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+/* 編輯文章、刪除文章按鈕樣式 */
+.btnArticle {
+    width: 90px;
+    height: 25px;
+    color: #f2f0eb;
+    font-size: 15px;
+    line-height: 100%;
+
+}
+
+/* 主色1 */
+.bgMainColor {
+    background-color: #F24041;
+}
+
+/* 配色 */
+.bgSecColor {
+    background-color: #f2955e;
+}
+
+.bgTextColor {
+    background-color: #151515;
+    color: #f2f0eb;
+}
+
+.bgTextColor:hover {
+    background-color: #151515;
+    color: #F24041;
+}
+
+/* 每欄文章 */
+.dataList {
+    /* border: 2px solid #d2d2d2; */
+    height: 100%;
+
+}
+
+/* 每一則文章內容(文字部分) */
+.articleInfo {
+    margin: 20px 30px 20px 20px;
+
+    height: 120px;
+}
+
+/* 文章內容標題 */
+.articleTitle {
+    color: #F24041;
+    font-size: 25px;
+}
+
+/* 文字溢出處裡 */
+.textOver {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 編輯文章、刪除文章按鍵群組 */
+.btnArticleGp {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* 文章圖片 */
+.articleImg {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
 }
